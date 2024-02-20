@@ -1,0 +1,5 @@
+env
+.env
+node_modules
+terraform-ec2/terraform*
+terraform-ec2/*terraform*
