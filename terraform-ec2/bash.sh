@@ -28,3 +28,14 @@ sudo yum install -y docker
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker $USER
+
+sudo yum install git -y
+
+
+# docker compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.24.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+git clone https://github.com/sakhilesibuyi1/grafana-terraform-prometheus-docker-aws.git
+cd grafana-terraform-prometheus-docker-aws
+docker-compose up
